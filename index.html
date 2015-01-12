@@ -6,26 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Off to the Shops</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- This is how you would link your custom stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row header">
-    <div class="col-md-4"></div>
-    <div class="col-xs-12 col-md-4"><h1>Off to the Shops!</h1><h3>A Shopping list</h3>
+<div class="container">
+  <div class="header">
+    <div class="header-left"></div>
+    <div class="header-center"><h1>Off to the Shops!</h1><h3>A Shopping list</h3>
       <h4>by Cillianbc</h4></div>
-    <div class="col-md-4"></div>
+    <div class="header-right"></div>
   </div>
-  <div class="row body">
-    <div class="col-md-4"></div>
-    <div class="col-xs-12 col-md-4 list-body"><p>Add to your shopping list using the box below and press enter!!</p>
+  <div class="body">
+    <div class="body-left"></div>
+    <div class="body-center"><p>Add to your shopping list using the box below and press enter!!</p>
     <input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="I'm a text box">
       <ul id="shopping-list"></ul>
       <button name="clear" id="clear" class="button">Clear shopping <list></list></button>
-    <div class="col-md-4"></div>
+    <div class="body-right"></div>
   </div>
 </div>
   </div>
@@ -33,10 +32,8 @@
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
