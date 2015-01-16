@@ -23,8 +23,6 @@ $(document).ready(function () {
       }
     $('input').submit(function() {
     var value = $( this ).val();
-    $('input').submit(function() {
-    var value = $( this ).val();
 
     $('#shopping-list').append("<li>"+value+"</li>");
     $('#shopping-list').css("visibility","visible");
