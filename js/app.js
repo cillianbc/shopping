@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $('ul').on('click', 'li', function (event) {
-  });
+  //$('ul').on('click', 'li', function (event) {
+  //});
 
 //var shopItem = //Text entered in text box//
 //$("#shopping-list ul").append(shopItem);
@@ -19,14 +19,13 @@ $(document).ready(function () {
     $("input").keypress(function(event) {
     if (event.which == 13) {
         event.preventDefault();
-        $("form").submit();
+        $("input").submit();
       }
     $('input').submit(function() {
     var value = $( this ).val();
 
     $('#shopping-list').append("<li>"+value+"</li>");
     $('#shopping-list').css("visibility","visible");
-    });
     });
   });
 });
