@@ -1,31 +1,29 @@
 $(document).ready(function () {
-  //$('ul').on('click', 'li', function (event) {
-  //});
-
-//var shopItem = //Text entered in text box//
-//$("#shopping-list ul").append(shopItem);
-
   $('button').on('click',function(){
-    $(this).remove('li:last');
+
+    console.log($('#shopping-list li').remove())
   });
-  $('#shopping-list li').on('click',function(){
-    $(this).addClass('li-strike');
+  
+  $('#shopping-list').on('click', 'li', function () {
+    $(this).toggleClass('li-strike');
   });
-
-
-
-
-
-    $("input").keypress(function(event) {
-    if (event.which == 13) {
-        event.preventDefault();
-        $("input").submit();
-      }
-    $('input').submit(function() {
-    var value = $( this ).val();
-
-    $('#shopping-list').append("<li>"+value+"</li>");
-    $('#shopping-list').css("visibility","visible");
-    });
+ 
+  function appendItem (value) {
+    var el = document.createElement('li');
+    el.textContent = value; // $('<li></li>').text(value);
+ 
+    // <script>alert(1);</script>
+    $('#shopping-list').append(el);
+    $('#shopping-list').css("display","block");
+  }
+ 
+  var ENTER = 13;
+ 
+  $("input").keypress(function (event) {
+    if (event.which === ENTER) {
+      event.preventDefault();
+      appendItem(this.value);
+      this.value = '';
+    }
   });
 });
