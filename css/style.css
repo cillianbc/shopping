@@ -1,9 +1,29 @@
+body{
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  font-family: 'Trade Winds', cursive;
+  color: white;
+
+}
+.main, .head{
+  background-color: #7b7b7b;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+.head{
+  margin: 15px;
+  padding: 15px;}
+.main{
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+.main p{
+  margin: 5px 5px 5px 15px;
+  padding: 0;}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -19,7 +39,14 @@
     width: 1170px;
   }
 }
-
+#add-items{
+  margin: 15px;
+  padding: 5px;
+  color: black;
+}
+#clear{
+  padding: 5px;
+  margin: 15px;}
 .col{
   width: 33.3%;
   margin-right: auto;
@@ -27,7 +54,12 @@
 }
 #shopping-list{
   display: none;
+
 }
 
 .li-strike{
-text-decoration:line-through;}
+  text-decoration:line-through;
+  color: black;}
+.button{
+  color: black;}
+
